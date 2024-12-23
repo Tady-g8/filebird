@@ -5,7 +5,7 @@ import React, { useState } from "react";
 export default function MainCenterForm() {
     const [files, setFiles] = useState<File[]>([] as File[]);
 
-    const handleDrop = (e) => {
+    const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
         e.preventDefault();
         e.stopPropagation();
 
@@ -13,14 +13,14 @@ export default function MainCenterForm() {
         setFiles((prevFiles) => [...prevFiles, ...droppedFiles]);
     };
 
-    const handleDragOver = (e) => {
+    const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
         e.preventDefault();
         e.stopPropagation();
     };
 
     return (
-        <div className="mainFormContainer h-auto"> 
-            <form action="" className="postForm h-full border-b border-slate-500">
+        <div className="mainFormContainer h-auto w-full"> 
+            <form action="" className="postForm h-full  border-slate-500">
                 <input
                     type="text"
                     name="text"
@@ -31,7 +31,7 @@ export default function MainCenterForm() {
                 <div
                     onDrop={handleDrop}
                     onDragOver={handleDragOver}
-                    className="w-10/12 mt-5 mx-auto border border-dashed border-gray-500 bg-black text-gray-300 flex justify-center items-center h-24"
+                    className="w-10/12 mt-5 mx-auto border border-dashed border-gray-500 text-gray-300 flex justify-center items-center h-24"
                 >
                     <p className="text-center text-gray-300">
                         Drag and drop your files here

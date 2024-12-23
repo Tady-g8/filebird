@@ -25,3 +25,25 @@ body {
   display: grid;
   grid-template-rows: 80% 20%;
 }
+
+#formText {
+  border: none; 
+  outline: none;
+  padding: 1.5rem 1rem;
+  /* border-bottom: 1px dashed rgb(100 116 139);*/
+  background-color: black;
+}
+
+#formFiles {
+  border: none; 
+  outline: none;
+  padding: 1rem 0rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed rgb(100 116 139);
+  background-color: black;
+}
+
+.buttonContainer{
+  display: grid;
+  grid-template-columns: 80% 20%;
+}

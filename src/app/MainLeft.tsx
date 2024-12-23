@@ -6,7 +6,7 @@ export default function MainLeft() {
     return (
         <div className="h-full mainLeftButtons">
 
-            <div className="place-content-start">
+            <div className="place-content-start md:ml-2">
                 <LeftButton btnText="Home" btnIcon="home.svg" />
                 <LeftButton btnText="Trending" btnIcon="trend.svg" />
                 <LeftButton btnText="Spaces" btnIcon="rocket.svg" />

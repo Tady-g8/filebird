@@ -9,7 +9,7 @@ export default function MainCenterForm() {
         e.preventDefault();
         e.stopPropagation();
 
-        const droppedFiles = Array.from(e.dataTransfer.files);
+        const droppedFiles = Array.from(e.dataTransfer.files) as File[];
         setFiles((prevFiles) => [...prevFiles, ...droppedFiles]);
     };
 

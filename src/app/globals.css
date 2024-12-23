@@ -14,6 +14,11 @@
   }
 }
 
+main{
+  display: grid;
+  grid-template-columns: 30% 40% 30% !important;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -52,7 +57,7 @@ body {
 
   main{
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 20% 60% 20% !important;
   }
 
   .mainLeftButtons{

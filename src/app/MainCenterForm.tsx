@@ -31,7 +31,7 @@ export default function MainCenterForm() {
                 <div
                     onDrop={handleDrop}
                     onDragOver={handleDragOver}
-                    className="w-10/12 mt-5 ml-12 border border-dashed border-gray-500 bg-black text-gray-300 flex justify-center items-center h-24"
+                    className="w-10/12 mt-5 mx-auto border border-dashed border-gray-500 bg-black text-gray-300 flex justify-center items-center h-24"
                 >
                     <p className="text-center text-gray-300">
                         Drag and drop your files here

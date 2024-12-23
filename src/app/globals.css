@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.mainLeftButtons{
+  padding-left: 60%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}

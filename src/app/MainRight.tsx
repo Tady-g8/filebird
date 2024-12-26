@@ -2,7 +2,7 @@
 
 export default function MainRight() {
     return (
-        <div>
+        <div className="MainRight">
             
         </div>
     )

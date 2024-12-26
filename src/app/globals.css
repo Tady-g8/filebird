@@ -85,12 +85,20 @@ body {
 
 @media (max-width: 1400px) {
 
+  .MainCenter{
+    min-width: 600px;
+  }
+
   .mainLeftButtons{
     padding-left: 40%;
   }
 }
 
 @media (max-width: 1023px) {
+
+  .MainCenter{
+    min-width: 600px;
+  }
 
   main{
     display: grid;
@@ -102,4 +110,28 @@ body {
     margin-left: auto;
     grid-template-columns: 100%;
   }
+}
+
+@media (max-width: 800px) {
+
+  main{
+    display: grid;
+    grid-template-columns: 20% 80% 0% !important;
+  }
+
+  .mainLeftButtons {
+    display: grid;
+    padding-left: 1.25rem;
+    margin: 0 auto;
+  }
+
+  .MainRight {
+    display: none !important;
+  }
+
+  .MainCenter {
+    width: 100% !important;
+    min-width: 0 !important;
+  } 
+
 }

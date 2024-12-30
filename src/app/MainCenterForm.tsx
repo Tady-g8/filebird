@@ -20,7 +20,7 @@ export default function MainCenterForm() {
 
     return (
         <div className="mainFormContainer h-auto w-full"> 
-            <form action="" className="postForm h-full  border-slate-500">
+            <form action="#" method="POST" encType="multipart/form-data" className="postForm h-full  border-slate-500">
                 <input
                     type="text"
                     name="text"
@@ -46,7 +46,12 @@ export default function MainCenterForm() {
                 </div>
                 <div className="buttonContainer mb-5">
 
-                    <div className="leftPlaceholder"></div>
+                    <div className="leftPlaceholder pl-16 place-content-end">
+                        <button className="px-2 rounded-full text-slate-300 hover:bg-slate-800">Timed drop</button>
+                        <span id="timeDrop"></span>
+                        <button className="ml-5 px-2 rounded-full text-slate-300 hover:bg-slate-800">Time Capsule</button>
+                        <span id="timeCapsule"></span>
+                    </div>
 
                     <button
                         className="bg-blue-500 text-white rounded-full gap-2 px-4 py-2 w-10/12 text-center h-10 mt-5 mr-5 transition duration-200 hover:bg-blue-400"

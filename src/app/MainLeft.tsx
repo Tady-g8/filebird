@@ -10,7 +10,7 @@ export default function MainLeft() {
                 <LeftButton btnText="Home" btnIcon="home.svg" />
                 <LeftButton btnText="Trending" btnIcon="trend.svg" />
                 <LeftButton btnText="Spaces" btnIcon="rocket.svg" />
-                <LeftButton btnText="Bookmarks" btnIcon="bookmark.svg" />
+                <LeftButton btnText="Collections" btnIcon="bookmark.svg" />
             </div>
             
 

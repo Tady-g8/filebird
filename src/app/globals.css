@@ -26,9 +26,8 @@ body {
 }
 
 .mainLeftButtons{
-  padding-left: 60%;
   display: grid;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 83% 17%;
 }
 
 #formText {
